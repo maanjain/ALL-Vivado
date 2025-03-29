@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_Systemverilog.srcs/sources_1/new/mux.v" \
+
+sv xil_defaultlib  \
+"../../../../project_Systemverilog.srcs/sim_1/new/environment.sv" \
+"../../../../project_Systemverilog.srcs/sim_1/new/define.sv" \
+"../../../../project_Systemverilog.srcs/sim_1/new/intf.sv" \
+"../../../../project_Systemverilog.srcs/sim_1/new/test.sv" \
+"../../../../project_Systemverilog.srcs/sim_1/new/tbench_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jan 20 01:37:54 2025
+# Process ID: 23512
+# Current directory: C:/Users/maanj/project_Systemverilog/project_Systemverilog.runs/synth_1
+# Command line: vivado.exe -log mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux.tcl
+# Log file: C:/Users/maanj/project_Systemverilog/project_Systemverilog.runs/synth_1/mux.vds
+# Journal file: C:/Users/maanj/project_Systemverilog/project_Systemverilog.runs/synth_1\vivado.jou
+# Running On: maanjain-windows, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 2, Host memory: 8362 MB
+#-----------------------------------------------------------
+source mux.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 429.238 ; gain = 162.965
+Command: synth_design -top mux -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4764

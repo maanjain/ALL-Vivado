@@ -1,0 +1,349 @@
+ /* importing fonr from google */
+
+
+
+
+ /* basic outline */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+ /* creating golbal variables */
+
+ :root {
+
+     /* funcrion of it  */
+     --primary-text-color: rgb(86, 8, 8);
+     --secondary-text-color: rgb(8, 86, 8);
+     --accent-color: rgb(36, 101, 176);
+     --accent-color-dark: rgb(148, 41, 100);
+     --padding-inline-section: 20px;
+
+ }
+
+ body {
+     font-family: '', '';
+     color: var(function)
+ }
+
+ h1 {
+     font-size: 2.7rem;
+ }
+
+ h2 {
+     font-size: 2rem;
+ }
+
+ h3 {
+     font-size: 1.5rem;
+ }
+
+ h4 {
+     font-size: 1rem;
+     font-weight: 700;
+     color: rgb(224, 206, 6);
+     padding: 15px, 30px;
+     text-align: center;
+
+ }
+
+ p {
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-size: 1.2rem;
+     color: var(function);
+     line-height: 1.7rem;
+
+ }
+
+ a {
+     /* remove text decoration */
+     text-decoration: none;
+     display: inline-block;
+ }
+
+ ul {
+     /* remove points */
+     list-style: none;
+ }
+
+
+ /* utility classes */
+
+ .flex {
+     display: flex;
+     align-items: center;
+
+ }
+
+ .container {
+     max-width: 1100px;
+     margin-inline: auto;
+     padding: var(--padding-inline-section);
+ }
+
+ .hover-link {
+     color: rgb(7, 152, 236);
+
+ }
+
+ .hover-link:hover {
+     color: blue;
+     transition: 0.2s ease-out;
+ }
+
+ .primary-button {
+     /* because this property is using mustiple time  */
+     background-color: rgb(7, 152, 236);
+
+     border-radius: 15px;
+     font-weight: 700px;
+     /* has given color many time so IMP is added to sustain this colour */
+     color: whitesmoke !important;
+     padding: 12px, 12px;
+     /* (x axis , y axis , blure , colour) */
+     box-shadow: 0 0 2px rgb(34, 86, 152);
+     transition: 0.2s ease-out;
+padding: 5px;
+
+ }
+
+ .primary-button :hover {
+     color: var(--accent-color-dark) !important;
+ }
+
+ .secondary-button {
+     border: 0.5px solid var(--secondary-text-color);
+     border-radius: 15px;
+     font-weight: 700;
+     color: black;
+     padding: 5px;
+     transition: 0.2s ease-out;
+
+
+ }
+
+ .secondary-button :hover {
+     border-color: var(--accent-color);
+     color: var(--accent-color) !important;
+ }
+
+
+ /* top banner colour */
+ .top-banner {
+     background-color: #4fb3b4;
+     background-image: url(C:\Users\maanj\Desktop\GIT\asset\30.png);
+     /* fixing image size for .. copying it again and again  */
+     background-size: 300px;
+     background-repeat: no-repeat;
+ }
+
+ .main-nav {
+     margin-top: 20px;
+     /* to provide spaces */
+     justify-content: space-between;
+     gap: 260spx;
+
+ }
+
+ .company-logo img {
+     width: 200px;
+ }
+
+ .nav-link {
+     flex-basis: 730px;
+ }
+
+ .nav-link ul {
+     justify-content: end;
+     gap: 40px;
+
+ }
+
+
+ /* header section*/
+ header {
+     padding: 50px var(--padding-inline-section);
+ }
+
+ .head-section {
+     justify-content: center;
+     gap: 50px;
+ }
+
+ .head-right img {
+     width: 600px;
+ }
+
+ .head-left {
+     max-width: 400vw;
+ }
+
+ .head-left h1 {
+     margin-top: 20px;
+ }
+
+ .head-right img {
+     width: 600px;
+ }
+
+ .get-button {
+     margin: 12px;
+ }
+
+ /* companies */
+ .company-header {
+     text-align: center;
+     margin-block: 30px;
+     color: black;
+
+ }
+
+ .logos {
+     margin: 8px;
+     justify-content: space-between;
+     /* for responsive */
+     flex-wrap: wrap;
+ }
+
+ .logo {
+     height: 36px;
+ }
+
+ /* feature section */
+ .feature-section {
+     padding: 88px, var(--padding-inline-section 0);
+
+     /* insert background image */
+     background-image: url(./asset\ 41.png);
+     background-repeat: no-repeat;
+     background-position: center;
+
+ }
+
+ .feature-header {
+     text-align: center;
+ }
+
+ .feature-header-text {
+     margin-bottom: 20px;
+ }
+
+ .feature-card {
+     flex-direction: column;
+     gap: 20px;
+     max-width: 30%;
+     text-align: center;
+
+ }
+
+ .feature-area {
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 40px;
+     margin-top: 20px;
+     ;
+ }
+
+ /* big feature section  */
+
+ .big-feature {
+     padding: 30px var(--padding-inline-section) 0;
+ }
+
+ .big-feature-container {
+     gap: 30px;
+ }
+
+ /* image resize */
+ .feature-image img {
+     width: 100%;
+ }
+
+ .feature-des {
+     flex-direction: column;
+     align-items: flex-start;
+
+ }
+
+ /* example section  */
+
+.first{
+    text-align: center;
+    /* flex-direction: column;
+    gap: 20px;
+  */
+}
+
+.example-card{
+    width: 23%;
+    /* H3 position absolute karunga so baki relative */
+    position: relative;
+    min-height: 400px;
+    background:black;
+    background: url(./asset\ 37.jpeg);/* but not blury(either an overlay or linera gradient) */
+transition: 0.3s ease-out ;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left:20px ;
+    right:20px ;
+    color: aliceblue;
+
+}
+.second{
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin-block: 30px;
+
+}
+/* for hover */
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+/* CTA area */
+.cta-container{
+    flex-direction: column;
+    gap: 50px;
+    color: white;
+    /* background-color: #183b54; */
+    
+}
+.cta{
+    background-color: #182b54;
+    padding: 120px var(--padding-inline-section);
+}
+.cta-container p{
+    margin-top:20px ;
+}
+ 
+/* footer section  */
+footer{
+    padding-block:80px ;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+.footer-con{
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+/* sub footer */
+.subfooter{
+    background-color: azure;
+    padding: var(--padding-inline-section);
+}
+.subfooter-con{
+    justify-content: center;
+    gap: 25px;
+}

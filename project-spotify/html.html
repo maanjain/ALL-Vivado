@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <!-- navigation bar using -->
+    <nav>
+      <ul>
+        <li class="logo"><img src="logo.png" alt="Not displaying" />spotify</li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <!-- main area  -->
+    <div class="container">
+      <div class="songlist">
+        <h1>Maan's playlist</h1>
+        <!-- song playlist -->
+        <div class="songitemcontainer">
+          <div class="songitem">
+            <img  alt="cover page" />
+            <span class="songname">Dusk Till Dawn</span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:37</span>
+              <i  id ="0" class=" songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+          <div class="songitem">
+            <img alt="cover page" />
+            <span class="songname">I hate you i love you</span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:34</span>
+              <i id ="1" class="songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+          <div class="songitem">
+            <img  alt="cover page" />
+            <span class="songname">Majesty</span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:34</span>
+              <i id ="2" class="songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+          <div class="songitem">
+            <img  alt="cover page" />
+            <span class="songname">Trampoline</span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:34</span>
+              <i id ="3" class="songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+          <div class="songitem">
+            <img  alt="cover page" />
+            <span class="songname">Cheap thrills</span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:34</span>
+              <i id ="4" class="songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+          <div class="songitem">
+            <img alt="cover page" />
+            <span class="songname">Telepatia </span>
+            <!--  -->
+            <span class="songlistplay">
+              <span class="timespan">05:34</span>
+              <i id ="5" class="songitemplay fa-solid fa-play fa-2x"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="songbanner"></div>
+    </div>
+
+    <!-- bottom -->
+    <div class="bottom">
+      <input type="range" name="range" id="bar" min="0" max="100" value="0" />
+      <!-- font awsome icons -->
+      <div class="icons">
+        <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+        <i class="fa-solid fa-play fa-3x" id="masterplay"></i>
+        <i class="fa-solid fa-3x fa-forward-step" id=""></i>
+      </div>
+      <div class="songGIF">
+        <img src="GIF.gif" alt="GIF" width="45px" id="gif" /><span class="mastersongname">
+          let me love you
+        </span>
+          
+      </div>
+    </div>
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/f33d7498ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>

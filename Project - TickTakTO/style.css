@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: aliceblue;
+    height: 62px;
+    font-size: 2.5vh;
+    align-items: center;
+    display: flex;
+    padding: 0 12px;
+}
+
+
+nav ul {
+    list-style-type: none;
+
+}
+
+/* main components for it */
+.gamecontainer {
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.container {
+
+    /* display GRID */
+    /* for making a GRID od desire size */
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+
+
+}
+
+/* box text chota hai , box se so - to make ir center make them FLEX and center*/
+.box {
+    /* to make borders */
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    /* to make the TEXT center */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box:hover {
+    background-color: rgb(197, 197, 224);
+
+}
+
+.gameinfo {
+    padding: 34px;
+    /*add font  */
+}
+
+.imagebox {
+    display: none;
+
+}
+
+/* to remove bored from both sides we use some utiloty classes */
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
